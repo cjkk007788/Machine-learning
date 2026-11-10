@@ -140,7 +140,7 @@ def Decay_Gradient_decent2(x,y,learning_rate,batch_size,epochs,seed = None,grad_
             f"w: {np.round(w, 3)}, b: {b:.4f}")
             
         learning_rate = learning_rate*decay
-        decay = decay - 0.001
+        decay = decay - 0.01
 
 
     plt.plot(history['loss'])
